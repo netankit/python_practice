@@ -9,19 +9,19 @@ Output: index1=1, index2=2
 '''
 
 def two_sum(input_list, target):
-	map = {}
+	hmap = {}
 	x=0
 	y=0
 	for i in xrange(0, len(input_list)):
 
-		if input_list[i] in map:
-			index = map[input_list[i]]
+		if input_list[i] in hmap:
+			index = hmap[input_list[i]]
 			x = index+1
 			y = i + 1
 
 		
 		else:
-			map[target - input_list[i]] = i
+			hmap[target - input_list[i]] = i
 
 	print "index1 = {}, index2 = {}".format(x,y)
 
