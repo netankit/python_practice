@@ -10,8 +10,10 @@ Output: index1=1, index2=2
 
 def two_sum(input_list, target):
 	hmap = {}
+	
 	x=0
 	y=0
+
 	for i in xrange(0, len(input_list)):
 
 		if input_list[i] in hmap:
@@ -23,11 +25,12 @@ def two_sum(input_list, target):
 		else:
 			hmap[target - input_list[i]] = i
 
-	print "index1 = {}, index2 = {}".format(x,y)
+	out =  "index1 = {}, index2 = {}".format(x,y)
+	return out
 
 
 
-input_list = [2, 7, 11, 15]
+input_list = [2, 11, 7, 15]
 target = 9
 
 print two_sum(input_list, target)
