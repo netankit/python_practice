@@ -1,4 +1,4 @@
-# KMP: Knuth-Morris-Pratt PAttern Matching Algorithm: Find the lowest index in Text T which starts to mathes the pattern P. 
+# KMP: Knuth-Morris-Pratt Pattern Matching Algorithm: Find the lowest index in Text T which starts to mathes the pattern P. 
 # More efficient than Brute Force and Bayer-Moore Algorithm
 def compute_kmp_fail(P):
     # import ipdb; ipdb.set_trace()
