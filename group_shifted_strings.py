@@ -13,7 +13,7 @@ def group_strings(strings):
     mapr = {}
 
     for s in strings:
-        arr = list(s)
+        arr = list(s) 
         # print arr
         if len(arr) > 0:
             diff = ord(arr[0]) - ord('a')
